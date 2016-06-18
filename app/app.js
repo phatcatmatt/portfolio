@@ -14,4 +14,10 @@ $stateProvider
   templateUrl: './app/projects/projectsView.html'
 })
 
+
+.state('bio', {
+  url: '/bio/',
+  templateUrl: './app/bio/bioView.html'
+})
+
 })
