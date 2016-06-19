@@ -80,10 +80,6 @@ a:active {
   width: 75px;
 }
 
-.mobile_skills > i, img {
-  margin: 0 10px;
-}
-
 .skills_container {
   display: none;
 }
@@ -112,13 +108,13 @@ a:active {
   align-items: center;
 }
 
-.projects_image {
+.projects_preview {
   /*background: url('../assets/waterfall.jpg');*/
   /*background-size: cover;*/
-  background-color: #f9f9f9;
-  height: 30vh;
+  background-color: rgb(235, 235, 235);
   width: 100vw;
   font-family: 'Raleway';
+  position: relative;
 }
 
 
@@ -126,6 +122,15 @@ h2 {
   font-size: 26px;
   font-weight: 500;
   color: #3d3d3d;
+}
+
+.projects_images_container {
+  display: inline-block;
+}
+.projects_image {
+    width: 100vw;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 
