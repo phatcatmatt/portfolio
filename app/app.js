@@ -9,9 +9,9 @@ $stateProvider
   templateUrl: './app/home/homeView.html'
 })
 
-.state('projects', {
-  url: '/projects/',
-  templateUrl: './app/projects/projectsView.html'
+.state('portfolio', {
+  url: '/portfolio/',
+  templateUrl: './app/portfolio/portfolioView.html'
 })
 
 

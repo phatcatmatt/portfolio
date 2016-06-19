@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="portfolioApp">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./app/styles/reset.css" media="screen" title="no title" charset="utf-8">
@@ -8,23 +9,33 @@
     <link rel="stylesheet" href="./app/styles/style.css" media="screen" title="no title" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Raleway:300,600,200,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-    <link rel="shortcut icon" type="image/png" href="./app/assets/pizza.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="./app/assets/pizza.png" />
     <title>Matt Nicholas</title>
-  </head>
-  <body ng-controller="mainCtrl">
+</head>
 
-<div class="navbar">
+<body ng-controller="mainCtrl">
 
-    <a ui-sref="home">HOME</a>
-    <a ui-sref="projects">PROJECTS</a>
-    <a ui-sref="bio">BIO</a>
-  </div>
+    <div class="navbar">
+
+        <a ui-sref="home">HOME</a>
+        <a ui-sref="portfolio">PORTFOLIO</a>
+        <a ui-sref="bio">BIO</a>
+    </div>
+
     <ui-view></ui-view>
+
+    <div class="footer">
+      <a href="mailto:matt@mattnicholas.io"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      <a href="www.github.com/phatcatmatt"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="www.linkedin.com/in/matt-nicholas"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
     <script src="./app/app.js"></script>
     <script src="./app/mainCtrl.js"></script>
-  </body>
+</body>
+
 </html>
