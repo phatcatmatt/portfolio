@@ -70,9 +70,6 @@ a:active {
   transform: translate(-85%, -10%);
 }
 
-/*.shadow {
-  text-shadow: 1px 1px 5px rgb(36, 36, 36);
-}*/
 .mobile_skills_container {
   /*margin: 15px 0;*/
   display: flex;
@@ -124,8 +121,13 @@ a:active {
 
 .project_twuftly {
   display: flex;
-
   flex-direction: column;
+}
+.project_devhousing{
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  background-color: rgb(250, 250, 250);
 }
 
 .project_name {
@@ -142,7 +144,7 @@ a:active {
   font-weight: 300;
   margin: 15px;
 }
-.video_container {
+.video_container_mobile {
   padding-top: 35px;
   position: relative;
   height: 0;
@@ -150,19 +152,33 @@ a:active {
   padding-bottom: 56.25%;
 }
 
-.video_container iframe {
+.video_container_mobile iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 35px;
-  height: 95%;;
+  height: 95%;
 }
 
-.project_devhousing {
-  padding-top: 5px;
-  background-color: rgb(250, 250, 250);
+.video_container {
+  display: none;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  width: 50%;
+  height: 0;
+  position: relative;
 }
+.video_container iframe {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px;
+  height: 52%;
+  position: absolute;
+}
+
 .headshot_container {
   display: flex;
   justify-content: center;
@@ -251,6 +267,32 @@ a:active {
     background-color: rgb(250, 250, 250);
     padding-bottom: 15px;
   }
+  .project_twuftly {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 450px;
+  }
+
+  .project_devhousing {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 450px;
+  }
+  .video_container_mobile {
+    display: none;
+  }
+  .video_container {
+    display: inline;
+  }
+  .video_container iframe {
+    display: inline-block;
+  }
+  .project_text {
+  width: 400px;
+  }
+
   .headshot_img {
     height: 100%;
     width: 400px;
@@ -280,5 +322,16 @@ a:active {
     height: 50vh;
   }
 
+}
+
+@media (min-width: 1500px) {
+
+  .project_twuftly {
+    height: 600px;
+  }
+
+  .project_devhousing {
+    height: 600px;
+  }
 
 }
