@@ -39,6 +39,15 @@ a:active {
   width: 100vw;
 }
 
+/*.bioimage{
+  background: url('../assets/rocks.jpg');
+  background-size: cover;
+  position: relative;
+  background-color: rgb(240, 240, 240);
+  height: 200px;
+  width: 100vw;
+}*/
+
 .image_name {
   font-family: 'Raleway';
   color: white;
@@ -61,6 +70,9 @@ a:active {
   transform: translate(-85%, -10%);
 }
 
+/*.shadow {
+  text-shadow: 1px 1px 5px rgb(36, 36, 36);
+}*/
 .mobile_skills_container {
   /*margin: 15px 0;*/
   display: flex;
@@ -127,11 +139,57 @@ h2 {
 .projects_images_container {
   display: inline-block;
 }
+
 .projects_image {
     width: 100vw;
     cursor: pointer;
     margin-bottom: 10px;
 }
+
+.bio_container {
+
+}
+
+.headshot_container {
+  display: flex;
+  justify-content: center;
+}
+
+.headshot_img {
+  background: url('../assets/headshot3.jpg') no-repeat center;
+  height: 250px;
+  width: 300px;
+  background-size: cover;
+}
+
+.headshot_header {
+  font-family: 'Raleway';
+  font-size: 32px;
+}
+
+.bio_container {
+  font-family: 'Raleway';
+}
+
+.bio_text {
+  line-height: 20px;
+  text-align: justify;
+  margin: 15px;
+  font-weight: 300;
+}
+
+.bio_header {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 400px) {
@@ -175,10 +233,26 @@ h2 {
   .skills_container {
     display: inline;
   }
+  .headshot_img {
+    height: 300px;
+    width: 400px;
+  }
+  .bio_container {
+    display: flex;
+    justify-content: space-around;;
+    flex-direction: row-reverse;
+  }
+  .bio_text_paragraph {
+    width: 400px;
+  }
 }
+
+
 
 @media (min-width: 1025px) {
   .homeimage {
     height: 50vh;
   }
+
+
 }
