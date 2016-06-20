@@ -35,7 +35,7 @@ a:active {
   background-size: cover;
   position: relative;
   background-color: rgb(240, 240, 240);
-  height: 35vh;
+  height: 200px;
   width: 100vw;
 }
 
@@ -134,13 +134,21 @@ h2 {
 }
 
 
-
-
-
+@media (min-width: 400px) {
+  .homeimage {
+    height: 275px;
+  }
+  .image_name {
+    font-size: 36px;
+  }
+  .image_name_subtitle {
+    font-size: 18px;
+  }
+}
 
 @media (min-width: 600px) {
   .homeimage {
-    height: 45vh;
+    height: 350px;
   }
   .image_name {
     font-size: 45px;
@@ -152,7 +160,7 @@ h2 {
 
 @media (min-width: 768px) {
   .homeimage {
-    height: 45vh;
+    height: 350px;
   }
   .image_name {
     font-size: 64px;
