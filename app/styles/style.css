@@ -6,9 +6,9 @@
   display: flex;
   justify-content: space-around;
   /*background-color: rgb(250, 250, 250);*/
-  height: 25px;
+  height: 30px;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Raleway';
 }
 
@@ -112,7 +112,7 @@ a:active {
 }
 
 .footer {
-  height: 25px;
+  height: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -178,6 +178,16 @@ a:active {
   height: 52%;
   position: absolute;
 }
+
+.twuftly_card {
+  background: url('../assets/twuftly/twuftly1.png') no-repeat center;
+  height: 200px;
+  width: 400px;
+  background-size: cover;;
+}
+
+
+
 
 .headshot_container {
   display: flex;
