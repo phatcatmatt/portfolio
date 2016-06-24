@@ -10,9 +10,15 @@ $stateProvider
 })
 
 .state('portfolio', {
-  url: '/portfolio/',
+  url: '/portfolio',
   templateUrl: './app/portfolio/portfolioView.html'
 })
+
+.state('portfolio.twuftly', {
+  url: '/twuftly',
+  templateUrl: './app/portfolio/twuftlyView.html'
+})
+
 
 
 // .state('bio', {
