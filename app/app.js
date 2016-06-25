@@ -19,6 +19,10 @@ $stateProvider
   templateUrl: './app/portfolio/twuftlyView.html'
 })
 
+.state('portfolio.dev-housing', {
+  url: '/dev-housing',
+  templateUrl: './app/portfolio/devHousingView.html'
+})
 
 
 // .state('bio', {

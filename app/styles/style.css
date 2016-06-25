@@ -119,16 +119,37 @@ a:active {
   background-color: rgb(250, 250, 250);
 }
 
-.project_twuftly {
+.projects_container {
+  display: flex;
+}
+
+.twuftly_card {
+  height: auto;
+  width: 90%;
+  justify-content: center;
+  margin-top: 15px;
+  display: flex;
+
+}
+
+.devhousing_card {
+  display: none;
+  background: url('../assets/housing/housing2.png') no-repeat center;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+}
+
+/*.project_twuftly {
   display: flex;
   flex-direction: column;
-}
-.project_devhousing{
+}*/
+/*.project_devhousing{
   display: flex;
   flex-direction: column;
   padding-top: 5px;
   background-color: rgb(250, 250, 250);
-}
+}*/
 
 .project_name {
   font-family: 'Raleway';
@@ -179,16 +200,6 @@ a:active {
   position: absolute;
 }
 
-.twuftly_card {
-  background: url('../assets/twuftly/twuftly1.png') no-repeat center;
-  height: 200px;
-  width: 200px;
-  background-size: cover;
-}
-
-
-
-
 .headshot_container {
   display: flex;
   justify-content: center;
@@ -220,6 +231,9 @@ a:active {
 .bio_header {
   font-size: 20px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -10px;
 }
 
 .contact_container {
