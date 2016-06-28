@@ -1,4 +1,4 @@
-angular.module('portfolioApp', ['ui.router'])
+angular.module('portfolioApp', ['ui.router', 'smoothScroll'])
 .config(function($stateProvider, $urlRouterProvider) {
 
 $urlRouterProvider.otherwise('/');
