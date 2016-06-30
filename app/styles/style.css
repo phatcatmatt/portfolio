@@ -1,15 +1,13 @@
-.body {
+body {
   font-family: 'Raleway', sans-serif;
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
-  /*background-color: rgb(250, 250, 250);*/
   height: 30px;
   align-items: center;
   font-size: 16px;
-  font-family: 'Raleway';
   font-weight: 300;
 }
 
@@ -40,17 +38,7 @@ a:active {
   width: 100vw;
 }
 
-/*.bioimage{
-  background: url('../assets/rocks.jpg');
-  background-size: cover;
-  position: relative;
-  background-color: rgb(240, 240, 240);
-  height: 200px;
-  width: 100vw;
-}*/
-
 .image_name {
-  font-family: 'Raleway';
   color: white;
   position: absolute;
   top: 50%;
@@ -132,7 +120,6 @@ a:active {
   height: 30px;
   align-items: center;
   font-size: 18px;
-  font-family: 'Raleway';
   color: #3d3d3d;
   font-weight: 300;
   margin: 10px 0;
@@ -159,7 +146,6 @@ a:active {
 }
 
 .project_name {
-  font-family: 'Raleway';
   font-size: 22px;
   font-weight: 500;
   text-align: center;
@@ -168,12 +154,12 @@ a:active {
 }
 
 .project_tagline {
-  font-family: 'Raleway';
   font-size: 16px;
   font-weight: 200;
   text-align: center;
   color: #3d3d3d;
   margin-top: 7px;
+  margin-bottom: 10px;
 }
 
 .project_details {
@@ -182,13 +168,12 @@ a:active {
 }
 
 .project_tech {
-  margin: 0px 15px 30px 15px;
+  margin: 0px 15px 15px 15px;
   font-style: italic;
   font-weight: 200;
   font-size: 14px;
-  text-align: justify;;
+  text-align: center;
   color: #3d3d3d;
-
 }
 
 .project_text {
@@ -200,14 +185,19 @@ a:active {
 }
 
 .project_walkthrough {
-  width: 100%;
+  display: flex;
   height: auto;
-  padding: 15px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 2px rgba(61, 61, 61, 0.2);
 }
 
-.project_walkthrough {
-
+.project_icons {
+  display: flex;
+  justify-content: center;
 }
+
 .projects_images {
 }
 
@@ -224,12 +214,10 @@ a:active {
 }
 
 .headshot_header {
-  font-family: 'Raleway';
   font-size: 32px;
 }
 
 .bio_container {
-  font-family: 'Raleway';
 }
 
 .bio_text {
@@ -276,6 +264,7 @@ a:active {
   .image_name_subtitle {
     font-size: 24px;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -297,22 +286,13 @@ a:active {
     background-color: rgb(250, 250, 250);
     padding-bottom: 15px;
   }
-
-  .project_details{
-    display: flex;
-    flex-direction: row-reverse;
+  .project_text {
+    margin: 25px
   }
-
   .project_link {
     display: flex;
     justify-content: center;
     flex-direction: row;
-  }
-  .project_tagline {
-    margin-bottom: 15px;
-  }
-  .project_text {
-  width: 300px;
   }
 
   .headshot_img {
@@ -321,7 +301,7 @@ a:active {
   }
   .bio_container {
     display: flex;
-    justify-content: space-around;;
+    justify-content: space-around;
     flex-direction: row-reverse;
   }
   .bio_text_paragraph {
@@ -339,19 +319,30 @@ a:active {
   }
 }
 
-@media (min-width: 1025px) {
-  .homeimage {
-    height: 50vh;
-  }
-
+@media (min-width: 1024px) {
   .project_details {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-
   }
   .project_walkthrough {
-  max-width: 600px;
+  width: 600px;
   }
   .project_text {
-  width: 30vw;
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .project_tagline {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .project_walkthrough {
+    width: 800px;
+  }
+  .project_text {
+    margin-left: 50px;
   }
 }
