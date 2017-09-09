@@ -25,9 +25,4 @@ $stateProvider
 })
 
 
-// .state('bio', {
-//   url: '/bio/',
-//   templateUrl: './app/bio/bioView.html'
-// })
-
 })
