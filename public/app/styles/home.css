@@ -5,6 +5,7 @@
   background-color: rgb(240, 240, 240);
   height: 200px;
   width: 100vw;
+  margin-top: 30px;
 }
 
 .image_name {
@@ -56,6 +57,10 @@
   justify-content: space-around;
   margin: 30px;
   /*background-color: #efefef;*/
+}
+
+.bio_container {
+  margin-bottom: 30px;
 }
 
 .headshot_container {
@@ -129,6 +134,7 @@
     display: list-item;
     background-color: rgb(250, 250, 250);
     padding-bottom: 15px;
+    height: 375px;
   }
 
   .headshot_img {
