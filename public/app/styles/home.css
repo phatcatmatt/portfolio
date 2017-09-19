@@ -1,0 +1,156 @@
+.homeimage{
+  background: url('../assets/hero.jpg');
+  background-size: cover;
+  position: relative;
+  background-color: rgb(240, 240, 240);
+  height: 200px;
+  width: 100vw;
+}
+
+.image_name {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.image_name_subtitle {
+  font-size: 16px;
+  font-weight: 200;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-85%, -10%);
+}
+
+.mobile_skills_container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 250, 250);
+}
+
+.mobile_skills {
+  font-size: 75px;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+.mobile_skills i {
+  font-size: 45px;
+}
+
+.skills_container {
+  display: none;
+  width: 100vw;
+}
+
+.skills {
+  font-size: 75px;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  /*background-color: #efefef;*/
+}
+
+.headshot_container {
+  display: flex;
+  justify-content: center;
+}
+
+.headshot_img {
+  background: url('../assets/headshot3.jpg') no-repeat center;
+  height: 250px;
+  width: 300px;
+  background-size: cover;
+}
+
+.bio_text {
+  line-height: 20px;
+  text-align: justify;
+  font-weight: 300;
+  margin: 15px;
+}
+
+.bio_header {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+
+
+@media (min-width: 400px) {
+  .homeimage {
+    height: 250px;
+  }
+  .image_name {
+    font-size: 36px;
+  }
+  .image_name_subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 600px) {
+  .homeimage {
+    height: 250px;
+  }
+  .image_name {
+    font-size: 45px;
+  }
+  .image_name_subtitle {
+    font-size: 24px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .homeimage {
+    height: 300px;
+  }
+  .image_name {
+    font-size: 64px;
+  }
+  .image_name_subtitle {
+    font-size: 28px;
+    transform: translate(-100%, -10%);
+  }
+  .mobile_skills_container {
+    display: none;
+  }
+  .skills_container {
+    display: list-item;
+    background-color: rgb(250, 250, 250);
+    padding-bottom: 15px;
+  }
+
+  .headshot_img {
+    height: 100%;
+    width: 400px;
+  }
+  .bio_container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  .bio_text_paragraph {
+    width: 350px;
+  }
+  .bio_text {
+    margin: 15px 0 15px 15px;
+  }
+}
+
+@media (min-width: 820px){
+  .headshot_img {
+    height: 100%;
+    width: 425px;
+  }
+}
