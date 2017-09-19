@@ -24,5 +24,10 @@ $stateProvider
   templateUrl: './app/portfolio/devHousingView.html'
 })
 
+.state('portfolio.dash-button', {
+  url: '/dash-button',
+  templateUrl: './app/portfolio/dashButtonView.html'
+})
+
 
 })

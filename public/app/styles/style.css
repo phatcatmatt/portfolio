@@ -73,10 +73,8 @@ a:active {
   justify-content: space-around;
   margin: 15px 0;
 }
-
-.mobile_skills_img {
-  height: 75px;
-  width: 75px;
+.mobile_skills i {
+  font-size: 45px;
 }
 
 .skills_container {
@@ -167,7 +165,6 @@ a:active {
 
 .project_details {
   padding-bottom: 10px;
-
 }
 
 .project_tech {
@@ -201,9 +198,6 @@ a:active {
   justify-content: center;
 }
 
-.projects_images {
-}
-
 .headshot_container {
   display: flex;
   justify-content: center;
@@ -218,9 +212,6 @@ a:active {
 
 .headshot_header {
   font-size: 32px;
-}
-
-.bio_container {
 }
 
 .bio_text {
@@ -247,7 +238,7 @@ a:active {
 
 @media (min-width: 400px) {
   .homeimage {
-    height: 275px;
+    height: 250px;
   }
   .image_name {
     font-size: 36px;
@@ -259,7 +250,7 @@ a:active {
 
 @media (min-width: 600px) {
   .homeimage {
-    height: 350px;
+    height: 250px;
   }
   .image_name {
     font-size: 45px;
@@ -272,7 +263,7 @@ a:active {
 
 @media (min-width: 768px) {
   .homeimage {
-    height: 350px;
+    height: 300px;
   }
   .image_name {
     font-size: 64px;
