@@ -3,14 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-.navbar-container {
-  position: fixed;
-  top: 0px;
-  z-index: 10;
-  width: 100vw;
-  height: 30px;
-  background-color: #fff;
-}
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -18,6 +10,11 @@ body {
   align-items: center;
   font-size: 16px;
   font-weight: 300;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100vw;
+  background-color: #fff;
 }
 
 
