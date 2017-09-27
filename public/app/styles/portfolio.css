@@ -109,22 +109,10 @@
   .project_text {
     margin: 25px
   }
-  .project_link {
-    display: flex;
+  .project_link_container {
+    /* display: flex;
     justify-content: center;
-    flex-direction: row;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .project_text {
-    margin: 25px
-  }
-  .project_link {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    flex-direction: row; */
   }
 }
 
